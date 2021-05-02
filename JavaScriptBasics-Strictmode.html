@@ -1,0 +1,29 @@
+<html>
+<head><title>JavaScript Basics - Strict mode</title></head>
+<body>
+<script type = "text/javaScript">
+
+//Auto-Global Variable Declaration
+"use strict"; 
+a = 1;  
+//Output-Uncaught ReferenceError: a is not defined
+
+//Deletion of any JavaScript element
+"use strict"; 
+var b = 1;
+delete b;  
+//Output-Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.
+
+//Using reserved keyword as variable name
+"use strict"; 
+var c = 5; 
+//Output-Uncaught SyntaxError: Unexpected c or arguments in strict mode.
+
+//Duplication of parameter names
+"use strict"; 
+var d = 5; 
+//Output-Uncaught SyntaxError: Unexpected d or arguments in strict mode.
+
+</script>
+</body>
+</html>

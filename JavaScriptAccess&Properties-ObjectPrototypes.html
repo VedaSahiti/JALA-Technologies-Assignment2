@@ -1,0 +1,30 @@
+<html>
+  
+<head>
+    <title>JavaScript Access&Properties - Object Prototypes</title>
+</head>
+  
+<body>
+
+    <h2>JavaScript Object Prototypes</h2>
+      
+    <p id="my"></p>
+      
+    <script>
+        function Student(a, b) {
+            this.name = a;
+            this.id = b;
+        }
+          
+        Student.prototype.details = function() {
+            return this.name + " " + this.id
+        };
+          
+        var s1 = new Student("Karthik", 546);
+          
+        document.getElementById("my").innerHTML
+                = s1.details(); 
+    </script>
+</body>
+  
+</html>  

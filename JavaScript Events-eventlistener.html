@@ -1,0 +1,16 @@
+<html>
+ <head><title>JavaScript Events - event listener to a button</title></head> 
+<body>
+	<h1>Current Day, Date and Time</h1>
+    <button id="try">Click here</button>
+    <h1 id="text"></h1>
+    <script>
+	var d = Date(Date.now());
+	A = d.toString()
+    document.getElementById("try").addEventListener("click", function(){
+		document.getElementById("text").innerText = A;
+		});
+    </script>
+</body>
+  
+</html>  

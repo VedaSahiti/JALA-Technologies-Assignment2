@@ -1,0 +1,23 @@
+<html>
+<head><title>JavaScriptBasics - Variable Hoisting</title>
+</head>
+<body>
+<script type = "text/javaScript">
+function hoist() {
+  a = 20;
+  var b = 100;
+}
+
+hoist();
+
+document.write(a);
+//Accessible as a global variable outside hoist() function
+document.write(b);
+/*
+Since it was declared, it is confined to the hoist() function scope.
+We can't print it out outside the confines of the hoist() function.
+Output: ReferenceError: b is not defined
+*/
+</script>
+</body>
+</html>

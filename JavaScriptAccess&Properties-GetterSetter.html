@@ -1,0 +1,66 @@
+<html>
+    <head>
+	<title>JavaScriptAccess&Properties - Getter and setter</title>
+       
+        <style>
+            body {
+                position: absolute;
+                left: 0%;
+                text-align: center;
+            }
+  
+            .container {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                height: 100%;
+                text-align: center;
+            }
+  
+            button {
+                width: 90px;
+                height: 60px;
+                font-size: 30px;
+                background-color: red;
+                color: honeydew;
+            }
+  
+            button:hover {
+                background-color: greenyellow;
+                color: grey;
+            }
+			
+            h2 {
+                color: black;
+                margin: 0 50px;
+                font-size: 45px;
+            }
+  
+        </style>
+    </head>
+  
+    <body>
+        <h1>Increment Counter: Using Setter and Getter Accessors</h1>
+  
+        <div ="container">
+            <button onclick="increment()">Count</button>
+            <h2 id="counting"></h2>
+        </div>
+
+		<script>
+            var data = {count :0,
+			get getCountValue() {
+				return this.count;
+			},
+			set setCountValue(val) {
+				this.count=val;
+			}
+			};
+			document.getElementById("counting").innerText = data.getCountValue;
+			function increment(){
+				data.setCountValue=data.getCountValue+1;
+				document.getElementById("counting").innerText = data.getCountValue;
+			}
+        </script>
+    </body>
+</html>

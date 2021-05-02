@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>CSS Page Adjustments - Visibility & Display</title>
+        <style>
+            .vis1 {
+                visibility: visible;
+            }
+			.vis2 {
+				visibility: hidden;
+			}
+			table.vis3 {
+                visibility: collapse
+            }
+            table, th, td {
+            border:1px solid red;
+			}
+			#b1{
+                height: 50px;
+                width: 60px;
+                background: red;
+                display: block;
+			}
+			#b2{
+                height: 50px;
+                width: 60px;
+                background: orange;
+                display: block;
+            }
+            #b3{
+                height: 50px;
+                width: 60px;
+                background: yellow;
+                display: block;
+            }
+			#i1{
+                height: 50px;
+                width: 60px;
+                background: red;
+                display: inline;
+             
+            }
+            #i2{
+                height: 50px;
+                width: 60px;
+                background: orange;
+                display: inline;
+             
+            }
+            #i3{
+                height: 50px;
+                width: 60px;
+                background: yellow;
+                display: inline;
+            }
+			#ib1{
+                height: 50px;
+                width: 60px;
+                background:red;
+                display: inline-block;
+             
+            }
+            #ib2{
+                height: 50px;
+                width: 60px;
+                background: orange;
+                display: inline-block;
+             
+            }
+            #ib3{
+                height: 50px;
+                width: 60px;
+                background: yellow;
+                display: inline-block;
+            }
+			
+        </style>
+    </head>
+    <body>
+        <h3>Visibility-visible</h3>
+		<p class="vis1">Knowledge </p>
+		<h3>Visibility-hidden</h3>
+		<p class="vis2">Empowerement</p>
+		<h3>Visibility-collapse</h3>
+		<table style="border:1px solid red;" class="vis3">
+            <tr>
+                <th>Learn</th>
+                <th>Explore</th>
+                <th>Experiment</th>
+            </tr>
+        </table>
+		<h3>Block display</h3>
+        <div id="b1">Block 1 </div>
+        <div id="b2">Block 2</div>
+        <div id="b3">Block 3</div>
+		<h3>Inline display</h3>
+        <div id="i1">Block 1 </div>
+        <div id="i2">Block 2</div>
+        <div id="i3">Block 3</div>
+		<h3>Inline-block display</h3>
+        <div id="ib1">Block 1 </div>
+        <div id="ib2">Block 2</div>
+        <div id="ib3">Block 3</div>
+    </body>
+</html>  

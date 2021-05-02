@@ -1,0 +1,62 @@
+<<html>
+  
+<head>
+    <style>
+  
+        /* Designing all grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            background-color: pink;
+            padding: 10px;
+        }
+  
+        /* Designing all grid-items */
+        .grid-container > div {
+            background-color: rgba(252, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+  
+        /* Grid Column */
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+  
+        /* Grid row */
+        .item3 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+  
+        /* Designing h1 element */
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+  
+<body>
+  
+    <h1>CSSCompatibility - Grids</h1>
+  
+    <!-- Creating grids -->
+    <div class="grid-container">
+        <div class="item1">box1</div>
+        <div class="item2">box2</div>
+        <div class="item3">box3</div>
+        <div class="item4">box4</div>
+        <div class="item5">box5</div>
+        <div class="item6">box6</div>
+        <div class="item7">box7</div>
+        <div class="item8">box8</div>
+    </div>
+  
+</body>
+  
+</html>
+        

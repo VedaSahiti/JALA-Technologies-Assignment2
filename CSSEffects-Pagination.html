@@ -1,0 +1,80 @@
+
+<html>
+<head>
+<style>
+.pagination {
+    display: inline-block;
+}
+.center {
+    text-align:center;
+}
+.pagi a {
+    font-weight:bold;
+    font-size:20px;
+    color: black;
+    float: left;
+    margin:0px 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    border:1px solid black;
+}
+.pagination a {
+    font-weight:bold;
+    font-size:20px;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border:1px solid black;
+}
+.pagi a.active {
+    background-color:blue;
+}
+.pagi a:hover:not(.active) {
+    background-color: #d4d5d2;
+}
+.pagination a.active {
+    background-color:blue;
+}
+.pagination a:hover:not(.active) {
+    background-color: #d4d5d2;
+}
+</style>
+</head>
+<body>
+  
+<p>Pagination with Space</p>
+  <div class="pagi">
+    <a href="#">«</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a class = "active" href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">7</a>
+    <a href="#">8</a>
+    <a href="#">9</a>
+	<a href="#">10</a>
+    <a href="#">»</a>
+  </div>
+ <br><br>
+<p>Pagination without spaces</p>
+  <div class="pagination">
+    <a href="#">«</a>
+    <a href="#">A</a>
+    <a href="#">B</a>
+    <a href="#">C</a>
+    <a href="#">D</a>
+    <a class = "active" href="#">D</a>
+    <a href="#">E</a>
+    <a href="#">F</a>
+    <a href="#">G</a>
+    <a href="#">H</a>
+	<a href="#">I</a>
+    <a href="#">»</a>
+  </div>
+
+  
+</body>
+</html>

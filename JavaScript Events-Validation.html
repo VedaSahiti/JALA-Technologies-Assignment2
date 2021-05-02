@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>JavaScript Events - Validation</title>
+<script type="text/javascript">
+function validation()
+{
+var username=document.RegistrationForm.u.value;
+var password=document.RegistrationForm.p.value;
+if(username.length<1)
+alert("Please enter your Username");
+if(password.length<6)
+alert("Password must be atleast 6 characters");
+}
+</script>
+</head>
+<body>
+<form name="Registrationform">
+Username:<input type="text" name="u">
+<br><br>
+Password:<input type="password" name="p">
+<br><br>
+<input type="button" value ="SUBMIT" onclick="validation()">
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+<script type="text/javascript">
+
+ var Text = '';
+
+    function setInput(button) {
+		this.button=button;
+       var buttonVal = button.name,
+       textbox = document.getElementById('input_' + buttonVal);
+       textbox.value = Text ;
+	   button.style.visibility = "hidden";
+    }
+</script>
+
+<html>
+	<head><title>JavaScriptAccess&Properties - this keyword,disappearing button</title></head>
+      <input class='input' id="input_a1" name="a1" value=""> 
+      <input type='submit' name='a1' value='click' onclick='setInput(this); return false;'>
+</html>
